@@ -1,0 +1,1 @@
+export const FIGMA_PAT = process.env.FIGMA_PAT;
