@@ -23,3 +23,9 @@ export const getFileNodes = (fileId: string, nodeIds: string, optionalParams: ge
 
   return request(url);
 }
+
+export const getFileStyles = (fileId: string) => {
+  let url = new URL(`https://api.figma.com/v1/files/${ fileId }/styles`);
+
+  return request(url);
+}
