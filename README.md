@@ -8,6 +8,8 @@ Grab dependencies:
 npm i
 ```
 
+Note: Export your Figma PAT in your [environment variables](src/config.ts) before proceeding.
+
 Build:
 ```sh
 npm run build
