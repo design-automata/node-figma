@@ -21,5 +21,6 @@ node dist
 ```
 
 ## Todo
+* NPM publish
 * Cover more API endpoints
 * Write tests
