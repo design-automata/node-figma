@@ -31,13 +31,13 @@ export const getFileStyles = (fileId: string) => {
 }
 
 export const getTeamStyles = (teamId: string, optionalParams?: getTeamStylesOptionalParams) => {
-  const url = new URL(`https://api.figma.com/v1/files/${ teamId }/styles`);
+  const url = new URL(`https://api.figma.com/v1/teams/${ teamId }/styles`);
 
   if (optionalParams !== undefined) {
     for (const param in optionalParams) {
       url.searchParams.set(param, optionalParams[param]);
     }
   }
-  
+
   return request(url);
 }
