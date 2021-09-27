@@ -12,3 +12,9 @@ export interface getFileNodesOptionalParams {
   geometry?: string,
   plugin_data?: string
 }
+
+export interface getTeamStylesOptionalParams {
+  page_size?: number,
+  after?: number,
+  before?: number
+}

@@ -1,5 +1,5 @@
 import { request } from './utils';
-import { getFileOptionalParams, getFileNodesOptionalParams } from './types';
+import { getFileOptionalParams, getFileNodesOptionalParams, getTeamStylesOptionalParams } from './types';
 
 export const getFile = (fileId: string, optionalParams?: getFileOptionalParams) => {
   const url = new URL(`https://api.figma.com/v1/files/${ fileId }`);
@@ -30,8 +30,14 @@ export const getFileStyles = (fileId: string) => {
   return request(url);
 }
 
-export const getTeamStyles = (teamId: string) => {
+export const getTeamStyles = (teamId: string, optionalParams?: getTeamStylesOptionalParams) => {
   const url = new URL(`https://api.figma.com/v1/files/${ teamId }/styles`);
 
+  if (optionalParams !== undefined) {
+    for (const param in optionalParams) {
+      url.searchParams.set(param, optionalParams[param]);
+    }
+  }
+  
   return request(url);
 }
