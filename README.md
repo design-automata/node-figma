@@ -3,24 +3,17 @@
 Zero-dependency wrapper around the Figma API for Node.js.
 
 ## Getting started
-Grab dependencies:
+Grab the lib:
 ```sh
-npm i
+npm i @design-automata/node-figma
 ```
 
-Note: Export your Figma PAT in your [environment variables](src/config.ts) before proceeding.
-
-Build:
+Export your Figma PAT in your [environment variables](src/config.ts) before proceeding.
 ```sh
-npm run build
+export FIGMA_PAT="your_figma_pat"
 ```
 
-Run:
-```sh
-node dist
+Import and use:
+```js
+import { getFile } from '@design-automata/node-figma'
 ```
-
-## Todo
-* NPM publish
-* Cover more API endpoints
-* Write tests
