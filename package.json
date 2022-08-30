@@ -1,5 +1,5 @@
 {
-  "name": "node-figma",
+  "name": "@design-automata/node-figma",
   "version": "0.1.0",
   "description": "Zero-dependency wrapper around the Figma API for Node.js",
   "main": "index.js",
