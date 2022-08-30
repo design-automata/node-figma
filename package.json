@@ -1,6 +1,6 @@
 {
   "name": "@design-automata/node-figma",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Zero-dependency wrapper around the Figma API for Node.js",
   "main": "lib/index.js",
   "scripts": {
